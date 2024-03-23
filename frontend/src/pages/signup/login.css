@@ -1,0 +1,97 @@
+
+.login-image{
+  background-color: #f6f6f6;
+  width: 100%;
+  max-width: 800px;
+  padding: 50px;
+  text-align: center;
+  margin: 20px 0px;
+  border-radius: 20px;
+}
+
+.login-image img{
+    width: 400px;
+    height: 450px;
+}
+.login-form-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-form-section-2{
+    margin: 0px 80px;
+    /* display: flex;
+    flex-direction: column;
+    gap: 20px; */
+}
+
+.login-form-logo img{
+ width: 40px;
+}
+
+.login-form-text p{
+    color: #828282;
+}
+.login-form-text-p-1{
+    font-size: 30px;
+}
+
+.login-form-password-section{
+ display: flex;
+ justify-content: space-between;
+}
+.login-form-password-section p{
+color: rgb(107, 68, 224);
+}
+
+.login-sign-in-btn button{
+   width: 100%;
+   border: none;
+   padding: 10px;
+   border-radius: 10px;
+   background-color: rgb(107, 68, 224);
+   color: #fff;
+   margin: 10px 0px;
+}
+
+.hr-or-line{
+    display: flex;
+    margin: 10px;
+}
+
+.social-login-icon{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.google-icon{
+    background-color: rgb(232, 164, 164);
+    padding: 0px 5px;
+    color: rgb(139, 15, 15);
+    border-radius: 3px;
+    font-size: 20px;
+}
+.facebook-icon{
+    background-color: rgb(154, 164, 223);
+    padding: 0px 5px;
+    color: blue;
+    border-radius: 3px;
+    font-size: 20px;  
+}
+.twitter-icon{
+    background-color: rgb(183, 187, 213);
+    padding: 0px 5px;
+    color: blue;
+    border-radius: 3px;
+    font-size: 20px;  
+}
+
+.login-new-account-text{
+    margin: 20px;
+    text-align: center;
+}
+.login-new-account-text span{
+    color:rgb(107, 68, 224) ;
+}

@@ -1,0 +1,149 @@
+/* Sidebar.css */
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    transition: width 0.3s ease;
+    position: relative;
+    height: 100vh; /* Set sidebar height to 100% of viewport height */
+    box-shadow:0px 0px 10px 0px rgb(211, 211, 211);
+}
+.sidebar.closed {
+    width: 60px;
+  }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Add margin to separate header from content */
+}
+
+.toggle-btn {
+    right:0;
+    position:absolute;
+    background: none;
+    color: #000;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    float:right;
+    z-index: 0;
+}
+
+.content-sidebar1 {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Enable vertical scrollbar if content overflows */
+    /* max-height: calc(100vh - 50px);  */
+    height: 100%;
+}
+.sidebar-logo-vue{
+    display:flex;
+    align-items:center;
+    z-index: 1000;
+}
+.content-sidebar {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Enable vertical scrollbar if content overflows */
+    /* max-height: calc(100vh - 100px);  */
+    height: 100%;
+}
+
+.content-sidebar::-webkit-scrollbar {
+    width: 6px; /* Set the width of the scrollbar */
+}
+
+/* Track */
+.content-sidebar::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Set a background color for the scrollbar track */
+}
+
+/* Handle */
+.content-sidebar::-webkit-scrollbar-thumb {
+    background: #cecdcd; /* Set a background color for the scrollbar handle */
+}
+
+/* Handle on hover */
+.content-sidebar::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Set a darker background color when the scrollbar handle is hovered */
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ul-sidebar .li-sidebar {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 10px; */
+    font-size: 20px;
+    gap: 10px;
+    /* border: 1px solid rgb(211, 211, 211); */
+    padding: 5px;
+    width: 211px;
+    margin: 10px -1px;
+    box-shadow: 0px 0px 10px 0px rgb(235, 234, 234);
+}
+
+.ul-sidebar .li-sidebar a {
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+   
+}
+
+.ul-sidebar .li-sidebar a:hover {
+    color: #ff8c00; /* Change color on hover */
+}
+
+.closed-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px; /* Adjust top margin to center icons vertically */
+}
+
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown .dropdown-btn {
+    cursor: pointer;
+    display: block;
+}
+.dropdown-btn div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown .dropdown-content a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.dropdown .dropdown-content a:hover {
+    background-color: #f2f2f2;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    max-height: none; /* Ensure dropdown content fits within available space */
+    overflow-y: hidden; /* Hide vertical scrollbar */
+}

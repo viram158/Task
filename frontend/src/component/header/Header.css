@@ -1,0 +1,59 @@
+.modern-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+  }
+  .search-icon{
+    font-size: 30px;
+  }
+  input[type="search"] {
+    border: none;
+    outline: none;
+    padding: 5px;
+    margin-left: 5px;
+  }
+  
+  .modern-header-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .modern-header-icons div {
+    margin-right: 10px;
+  }
+  
+  .profile-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-section img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+.sun-icon{
+    font-size: 30px;
+}  
+.bell-icon{
+    font-size: 30px;
+}  
+.widget-icon{
+    font-size: 30px;
+}  
+
+.Logout-section{
+  font-size: 30px;
+  cursor: pointer;
+}
